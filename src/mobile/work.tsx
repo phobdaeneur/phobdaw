@@ -12,7 +12,7 @@ function Work({ mode }: Props) {
   const selectMode = (mode: string) => {
     if (mode === "darkMode") {
       return (
-        <div className=" w-screen h-screen bg-[#1c1c1c] flex flex-col pt-10 ">
+        <div className=" w-screen h-screen bg-[#1c1c1c] flex flex-col items-center justify-center pt-10 ">
           <div>
             <Calendar
               localizer={localizer}
@@ -27,7 +27,7 @@ function Work({ mode }: Props) {
     }
     if (mode === "lightMode") {
       return (
-        <div className=" w-screen h-screen bg-[#f5f5f5] flex flex-col pt-10">
+        <div className=" w-screen h-screen bg-[#f5f5f5] flex flex-col items-center justify-center pt-10">
           <div>
             <Calendar
               localizer={localizer}
@@ -43,7 +43,7 @@ function Work({ mode }: Props) {
 
     if (mode === "colorMode") {
       return (
-        <div className=" w-screen h-screen bg-[#f8dfd8] flex flex-col pt-10">
+        <div className=" w-screen h-screen bg-[#f8dfd8] flex flex-col items-center justify-center pt-10">
           <div>
             <Calendar
               localizer={localizer}

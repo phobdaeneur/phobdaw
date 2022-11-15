@@ -411,69 +411,69 @@ export default function W_Menu() {
       return (
         <Tab.Group>
           <Tab.List className="flex flex-row items-center justify-between h-16 fixed z-10 w-screen px-10 bg-[#E3CAC3]">
-            <label className="text-3xl font-mono text-[#1c1c1c]">
+            <label className="text-3xl font-mono text-[#f5f5f5]">
               IMAGE LOGO
             </label>
             <div className="flex flex-row gap-10 items-center justify-center">
               <Tab value="home" onClick={() => setSelected("home")}>
                 {selected === "home" ? (
-                  <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#1c1c1c]">
-                    <HomeIcon sx={{ color: "#1c1c1c" }} />
-                    <label className="text-lg font-mono text-[#1c1c1c]">
+                  <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#9eaa8e]">
+                    <HomeIcon sx={{ color: "#9eaa8e" }} />
+                    <label className="text-lg font-mono text-[#9eaa8e]">
                       HOME
                     </label>
                   </div>
                 ) : (
-                  <label className="text-lg font-mono text-[#1c1c1c] cursor-pointer hover:text-[#1c1c1c]/50">
+                  <label className="text-lg font-mono text-[#f5f5f5] cursor-pointer hover:text-[#1c1c1c]/50">
                     HOME
                   </label>
                 )}
               </Tab>
               <Tab value="me" onClick={() => setSelected("me")}>
                 {selected === "me" ? (
-                  <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#1c1c1c]">
-                    <StarIcon sx={{ color: "#1c1c1c" }} />
-                    <label className="text-lg font-mono text-[#1c1c1c]">
+                  <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#F8ABB3]">
+                    <StarIcon sx={{ color: "#F8ABB3" }} />
+                    <label className="text-lg font-mono text-[#F8ABB3]">
                       ABOUT ME
                     </label>
                   </div>
                 ) : (
-                  <label className="text-lg font-mono text-[#1c1c1c] cursor-pointer hover:text-[#1c1c1c]/50">
+                  <label className="text-lg font-mono text-[#f5f5f5] cursor-pointer hover:text-[#1c1c1c]/50">
                     ABOUT ME
                   </label>
                 )}
               </Tab>
               <Tab value="document" onClick={() => setSelected("document")}>
                 {selected === "document" ? (
-                  <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#1c1c1c]">
-                    <CodeIcon sx={{ color: "#1c1c1c" }} />
-                    <label className="text-lg font-mono text-[#1c1c1c]">
+                  <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#80bbda]">
+                    <CodeIcon sx={{ color: "#80bbda" }} />
+                    <label className="text-lg font-mono text-[#80bbda]">
                       DOCUMENT
                     </label>
                   </div>
                 ) : (
-                  <label className="text-lg font-mono text-[#1c1c1c] cursor-pointer hover:text-[#1c1c1c]/50">
+                  <label className="text-lg font-mono text-[#f5f5f5] cursor-pointer hover:text-[#1c1c1c]/50">
                     DOCUMENT
                   </label>
                 )}
               </Tab>
               <Tab value="work" onClick={() => setSelected("work")}>
                 {selected === "work" ? (
-                  <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#1c1c1c]">
-                    <CalendarIcon sx={{ color: "#1c1c1c" }} />
-                    <label className="text-lg font-mono text-[#1c1c1c]">
+                  <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#7B86B3]">
+                    <CalendarIcon sx={{ color: "#7B86B3" }} />
+                    <label className="text-lg font-mono text-[#7B86B3]">
                       MY WORK
                     </label>
                   </div>
                 ) : (
-                  <label className="text-lg font-mono text-[#1c1c1c] cursor-pointer hover:text-[#1c1c1c]/50">
+                  <label className="text-lg font-mono text-[#f5f5f5] cursor-pointer hover:text-[#1c1c1c]/50">
                     MY WORK
                   </label>
                 )}
               </Tab>
               <div className="cursor-pointer">
                 <DehazeIcon
-                  sx={{ color: "#1c1c1c" }}
+                  sx={{ color: "#f5f5f5" }}
                   onClick={toggleDrawer(true)}
                 />
                 <SwipeableDrawer
@@ -508,5 +508,5 @@ export default function W_Menu() {
       );
     }
   };
-  return <div className=" w-screen">{selectMode(mode)}</div>;
+  return <div>{selectMode(mode)}</div>;
 }

@@ -4,10 +4,10 @@ import W_Menu from "../web/w_menu";
 function Phobdaw() {
   return (
     <div>
-      <div className=" hidden md:block h-screen w-screen">
+      <div className=" hidden lg:block h-screen w-screen">
         <W_Menu />
       </div>
-      <div className=" block md:hidden h-screen w-screen">
+      <div className=" block lg:hidden h-screen w-screen">
         <Menus />
       </div>
     </div>
