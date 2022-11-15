@@ -195,7 +195,7 @@ function Menus() {
               </div>
             </Box>
           </Modal>
-          <div className="flex flex-col fixed bg-[#f5f5f5] h-screen md:hidden z-20">
+          <div className="flex flex-col fixed bg-[#f5f5f5] h-screen lg:hidden z-20">
             <Box
               className=" z-10"
               sx={{ transform: "translateZ(0px)", flexGrow: 1 }}
@@ -315,7 +315,7 @@ function Menus() {
               </div>
             </Box>
           </Modal>
-          <div className="flex flex-col fixed bg-[#1c1c1c] h-screen md:hidden">
+          <div className="flex flex-col fixed bg-[#1c1c1c] h-screen lg:hidden">
             <Box
               className=" z-10"
               sx={{ transform: "translateZ(0px)", flexGrow: 1 }}
@@ -435,7 +435,7 @@ function Menus() {
               </div>
             </Box>
           </Modal>
-          <div className="flex flex-col fixed bg-[#f5f5f5] h-screen md:hidden">
+          <div className="flex flex-col fixed bg-[#f5f5f5] h-screen lg:hidden">
             <Box
               className=" z-10"
               sx={{ transform: "translateZ(0px)", flexGrow: 1 }}
