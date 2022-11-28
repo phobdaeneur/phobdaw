@@ -152,7 +152,7 @@ function Me({ mode }: Props) {
                     </a>
 
                     <a
-                      href="https://www.figma.com/files/recent?fuid=1016613335959550937"
+                      href="https://www.figma.com/file/iRygEtcgTE5VXP3ocJnWXc/UI-design-phobdaw?node-id=0%3A1&t=uw6XwA1fJ5r4Jj7V-0"
                       target="_blank"
                       rel="noopener"
                       className="flex flex-col items-center justify-center w-40"
@@ -383,7 +383,7 @@ function Me({ mode }: Props) {
                     </a>
 
                     <a
-                      href="https://www.figma.com/files/recent?fuid=1016613335959550937"
+                      href="https://www.figma.com/file/iRygEtcgTE5VXP3ocJnWXc/UI-design-phobdaw?node-id=0%3A1&t=uw6XwA1fJ5r4Jj7V-0"
                       target="_blank"
                       rel="noopener"
                       className="flex flex-col items-center justify-center w-40"
@@ -617,7 +617,7 @@ function Me({ mode }: Props) {
                     </a>
 
                     <a
-                      href="https://www.figma.com/files/recent?fuid=1016613335959550937"
+                      href="https://www.figma.com/file/iRygEtcgTE5VXP3ocJnWXc/UI-design-phobdaw?node-id=0%3A1&t=uw6XwA1fJ5r4Jj7V-0"
                       target="_blank"
                       rel="noopener"
                       className="flex flex-col items-center justify-center w-40"

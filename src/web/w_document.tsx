@@ -23,7 +23,7 @@ function W_Document({ mode }: Props) {
     if (mode === "darkMode") {
       return (
         <div className="h-full w-screen px-10 bg-[#1c1c1c] flex flex-row items-center justify-center">
-          <div className="-black h-screen w-screen p-5 ">
+          <div className="h-full w-screen p-5 grid grid-rows-2 gap-4 ">
             <div className="row-span-2 grid h-3/6 grid-cols-5 gap-4">
               <div
                 style={{ backgroundImage: `url(${bg})` }}
@@ -50,7 +50,7 @@ function W_Document({ mode }: Props) {
 
               <div
                 style={{ backgroundImage: `url(${bg13})` }}
-                className=" p-4 bg-cover shadow-md hover:scale-125  ease-in-out duration-700 flex flex-col items-center justify-center"
+                className=" p-4 bg-cover shadow-md hover:scale-125  ease-in-out duration-700 flex flex-col items-center justify-center cursor-pointer"
               >
                 <h3 className=" font-serif text-xl hover:border-b-2 text-[#f5f5f5] hover:border-[#CBC7B7] cursor-pointer">
                   LIBRARY
@@ -70,7 +70,7 @@ function W_Document({ mode }: Props) {
 
               <div
                 style={{ backgroundImage: `url(${bg13})` }}
-                className=" p-4 bg-cover shadow-md flex flex-col items-center justify-center hover:scale-125 ease-in-out duration-700 "
+                className=" p-4 bg-cover shadow-md flex flex-col items-center justify-center hover:scale-125 ease-in-out duration-700 cursor-pointer"
               >
                 <h3 className=" font-serif text-xl hover:border-b-2 text-[#f5f5f5] hover:border-[#CBC7B7] cursor-pointer">
                   ICONS
@@ -105,7 +105,7 @@ function W_Document({ mode }: Props) {
     if (mode === "lightMode") {
       return (
         <div className="h-full w-screen px-10 bg-[#f5f5f5] flex flex-row items-center justify-center">
-          <div className="-black h-screen w-screen p-5">
+          <div className="h-full w-screen p-5 grid grid-rows-2 gap-4">
             <div className="row-span-2 grid h-3/6 grid-cols-5 gap-4">
               <div
                 style={{ backgroundImage: `url(${bg})` }}
@@ -135,7 +135,7 @@ function W_Document({ mode }: Props) {
                 style={{ backgroundImage: `url(${bg2})` }}
                 className=" p-4 bg-cover shadow-md hover:scale-125 cursor-pointer ease-in-out duration-700 flex flex-col items-center justify-center"
               >
-                <h3 className=" font-serif text-xl border-b-2 border-[#CBC7B7]">
+                <h3 className=" font-serif text-xl hover:border-b-2 hover:border-[#CBC7B7]">
                   LIBRARY
                 </h3>
               </div>
@@ -155,7 +155,9 @@ function W_Document({ mode }: Props) {
                 style={{ backgroundImage: `url(${bg3})` }}
                 className=" p-4 bg-cover bg-center shadow-md flex flex-col items-center justify-center hover:scale-125 ease-in-out duration-700 cursor-pointer"
               >
-                <h3 className=" font-serif">ICONS</h3>
+                <h3 className=" font-serif hover:border-b-2 hover:border-[#567577]">
+                  ICONS
+                </h3>
               </div>
               <div className=" p-4 font-serif bg-[#80BBD9] bg-opacity-30 shadow-md cursor-no-drop"></div>
             </div>
@@ -186,7 +188,7 @@ function W_Document({ mode }: Props) {
     if (mode === "colorMode") {
       return (
         <div className="h-full w-screen px-10 bg-[#E3CAC3] flex flex-row items-center justify-center">
-          <div className="-black h-screen w-screen p-5 ">
+          <div className="h-full w-screen p-5 grid grid-rows-2 gap-4 ">
             <div className="row-span-2 grid h-3/6 grid-cols-5 gap-4 bg-[#E3CAC3]">
               <div
                 style={{ backgroundImage: `url(${bg})` }}
@@ -216,7 +218,7 @@ function W_Document({ mode }: Props) {
                 style={{ backgroundImage: `url(${bg2})` }}
                 className=" p-4 bg-cover shadow-md hover:scale-125 cursor-pointer ease-in-out duration-700 flex flex-col items-center justify-center"
               >
-                <h3 className=" font-serif text-xl border-b-2 border-[#CBC7B7]">
+                <h3 className=" font-serif text-xl hover:border-b-2 hover:border-[#CBC7B7]">
                   LIBRARY
                 </h3>
               </div>
@@ -236,7 +238,9 @@ function W_Document({ mode }: Props) {
                 style={{ backgroundImage: `url(${bg3})` }}
                 className=" p-4 bg-cover bg-center shadow-md flex flex-col items-center justify-center hover:scale-125 ease-in-out duration-700 cursor-pointer"
               >
-                <h3 className=" font-serif">ICONS</h3>
+                <h3 className=" font-serif hover:border-b-2 hover:border-[#567577]">
+                  ICONS
+                </h3>
               </div>
               <div className=" p-4 font-serif bg-[#80BBD9] bg-opacity-30 shadow-md cursor-no-drop"></div>
             </div>
