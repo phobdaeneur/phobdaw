@@ -26,6 +26,11 @@ import W_Home from "./w_home";
 import W_ME from "./w_me";
 import W_Document from "./w_document";
 import W_Work from "./w_work";
+import logoW from "../image/phobdaw/logoW.png";
+import logoD from "../image/phobdaw/logoD.png";
+import sunIcon from "../image/icon/sun.png";
+import moonIcon from "../image/icon/moon.png";
+import colorIcon from "../image/icon/color.png";
 
 export default function W_Menu() {
   const [selected, setSelected] = useState("home");
@@ -165,7 +170,7 @@ export default function W_Menu() {
               Select mode
             </label>
             <div className="flex flex-row gap-4 items-center justify-start px-5">
-              <MoonIcon sx={{ color: "#f5f5f5" }} />
+              <img src={moonIcon} className="w-8" />
               <button
                 onClick={() => {
                   return [setMode("darkMode")];
@@ -177,7 +182,7 @@ export default function W_Menu() {
             </div>
 
             <div className="flex flex-row gap-4 items-center justify-start px-5">
-              <SunIcon sx={{ color: "#f5f5f5" }} />
+              <img src={sunIcon} className="w-8" />
               <button
                 onClick={() => {
                   return [setMode("lightMode")];
@@ -189,7 +194,7 @@ export default function W_Menu() {
             </div>
 
             <div className="flex flex-row gap-4 items-center justify-start px-5">
-              <ColorIcon sx={{ color: "#f5f5f5" }} />
+              <img src={colorIcon} className="w-8" />
               <button
                 onClick={() => {
                   return [setMode("colorMode")];
@@ -210,24 +215,8 @@ export default function W_Menu() {
       return (
         <Tab.Group>
           <Tab.List className="flex flex-row items-center justify-between h-16 fixed px-10 z-10 w-screen bg-[#1c1c1c]">
-            <label className="text-3xl font-mono text-[#f5f5f5]">
-              IMAGE LOGO
-            </label>
+            <img src={logoW} className=" h-16 w-auto" />
             <div className="flex flex-row gap-10 items-center justify-center bg-[#1c1c1c]">
-              <Tab value="home" onClick={() => setSelected("home")}>
-                {selected === "home" ? (
-                  <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#f5f5f5]">
-                    <HomeIcon sx={{ color: "#f5f5f5" }} />
-                    <label className="text-lg font-mono text-[#f5f5f5]">
-                      HOME
-                    </label>
-                  </div>
-                ) : (
-                  <label className="text-lg font-mono text-[#f5f5f5] cursor-pointer hover:text-[#9a9a9a]">
-                    HOME
-                  </label>
-                )}
-              </Tab>
               <Tab value="me" onClick={() => setSelected("me")}>
                 {selected === "me" ? (
                   <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#f5f5f5]">
@@ -247,12 +236,12 @@ export default function W_Menu() {
                   <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#f5f5f5]">
                     <CodeIcon sx={{ color: "#f5f5f5" }} />
                     <label className="text-lg font-mono text-[#f5f5f5]">
-                      DOCUMENT
+                      TEMPLATE
                     </label>
                   </div>
                 ) : (
                   <label className="text-lg font-mono text-[#f5f5f5] cursor-pointer hover:text-[#9a9a9a]">
-                    DOCUMENT
+                    TEMPLATE
                   </label>
                 )}
               </Tab>
@@ -288,10 +277,6 @@ export default function W_Menu() {
           </Tab.List>
           <Tab.Panels className="bg-[#1c1c1c] pt-20">
             <Tab.Panel>
-              <W_Home mode={mode} />
-            </Tab.Panel>
-
-            <Tab.Panel>
               <W_ME mode={mode} />
             </Tab.Panel>
 
@@ -311,24 +296,8 @@ export default function W_Menu() {
       return (
         <Tab.Group>
           <Tab.List className="flex flex-row items-center justify-between h-16 fixed px-10 z-10 w-screen bg-[#f5f5f5]">
-            <label className="text-3xl font-mono text-[#1c1c1c]">
-              IMAGE LOGO
-            </label>
+            <img src={logoD} className=" h-16 w-auto" />
             <div className="flex flex-row gap-10 items-center justify-center">
-              <Tab value="home" onClick={() => setSelected("home")}>
-                {selected === "home" ? (
-                  <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#1c1c1c]">
-                    <HomeIcon sx={{ color: "#1c1c1c" }} />
-                    <label className="text-lg font-mono text-[#1c1c1c]">
-                      HOME
-                    </label>
-                  </div>
-                ) : (
-                  <label className="text-lg font-mono text-[#1c1c1c] cursor-pointer hover:text-[#1c1c1c]/50">
-                    HOME
-                  </label>
-                )}
-              </Tab>
               <Tab value="me" onClick={() => setSelected("me")}>
                 {selected === "me" ? (
                   <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#1c1c1c]">
@@ -348,12 +317,12 @@ export default function W_Menu() {
                   <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#1c1c1c]">
                     <CodeIcon sx={{ color: "#1c1c1c" }} />
                     <label className="text-lg font-mono text-[#1c1c1c]">
-                      DOCUMENT
+                      TEMPLATE
                     </label>
                   </div>
                 ) : (
                   <label className="text-lg font-mono text-[#1c1c1c] cursor-pointer hover:text-[#1c1c1c]/50">
-                    DOCUMENT
+                    TEMPLATE
                   </label>
                 )}
               </Tab>
@@ -389,10 +358,6 @@ export default function W_Menu() {
           </Tab.List>
           <Tab.Panels className="bg-[#f5f5f5] pt-20">
             <Tab.Panel>
-              <W_Home mode={mode} />
-            </Tab.Panel>
-
-            <Tab.Panel>
               <W_ME mode={mode} />
             </Tab.Panel>
 
@@ -411,24 +376,8 @@ export default function W_Menu() {
       return (
         <Tab.Group>
           <Tab.List className="flex flex-row items-center justify-between h-16 fixed z-10 w-screen px-10 bg-[#E3CAC3]">
-            <label className="text-3xl font-mono text-[#f5f5f5]">
-              IMAGE LOGO
-            </label>
+            <img src={logoD} className=" h-16 w-auto" />
             <div className="flex flex-row gap-10 items-center justify-center">
-              <Tab value="home" onClick={() => setSelected("home")}>
-                {selected === "home" ? (
-                  <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#9eaa8e]">
-                    <HomeIcon sx={{ color: "#9eaa8e" }} />
-                    <label className="text-lg font-mono text-[#9eaa8e]">
-                      HOME
-                    </label>
-                  </div>
-                ) : (
-                  <label className="text-lg font-mono text-[#f5f5f5] cursor-pointer hover:text-[#1c1c1c]/50">
-                    HOME
-                  </label>
-                )}
-              </Tab>
               <Tab value="me" onClick={() => setSelected("me")}>
                 {selected === "me" ? (
                   <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#F8ABB3]">
@@ -448,12 +397,12 @@ export default function W_Menu() {
                   <div className="flex flex-row items-center justify-center gap-2 border-b-2 border-[#80bbda]">
                     <CodeIcon sx={{ color: "#80bbda" }} />
                     <label className="text-lg font-mono text-[#80bbda]">
-                      DOCUMENT
+                      TEMPLATE
                     </label>
                   </div>
                 ) : (
                   <label className="text-lg font-mono text-[#f5f5f5] cursor-pointer hover:text-[#1c1c1c]/50">
-                    DOCUMENT
+                    TEMPLATE
                   </label>
                 )}
               </Tab>
@@ -488,10 +437,6 @@ export default function W_Menu() {
             </div>
           </Tab.List>
           <Tab.Panels className="bg-[#E3CAC3] pt-20">
-            <Tab.Panel>
-              <W_Home mode={mode} />
-            </Tab.Panel>
-
             <Tab.Panel>
               <W_ME mode={mode} />
             </Tab.Panel>

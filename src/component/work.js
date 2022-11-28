@@ -60,4 +60,10 @@ export default [
     start: new Date("2022-11-18 10:30"),
     end: new Date("2022-11-18 11:30"),
   },
+  {
+    title: "Day off : Father's Day",
+    allDay: true,
+    start: new Date("2022-12-05"),
+    end: new Date("2022-12-05"),
+  },
 ];

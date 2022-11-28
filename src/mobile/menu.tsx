@@ -27,6 +27,9 @@ import Me from "./me";
 import Work from "./work";
 import Home from "./home";
 import Document from "./document";
+import sunIcon from "../image/icon/sun.png";
+import moonIcon from "../image/icon/moon.png";
+import colorIcon from "../image/icon/color.png";
 
 const actionsDark = [
   {
@@ -386,7 +389,7 @@ function Menus() {
               </Typography>
               <div className="flex flex-row items-center justify-center pt-5">
                 <div className="flex flex-col gap-2 items-center justify-center">
-                  <MoonIcon sx={{ color: "#f5f5f5" }} />
+                  <img src={moonIcon} className="w-8" />
                   <button
                     onClick={() => {
                       return [
@@ -402,7 +405,7 @@ function Menus() {
                 </div>
 
                 <div className="flex flex-col gap-2 items-center justify-center">
-                  <SunIcon sx={{ color: "#f5f5f5" }} />
+                  <img src={sunIcon} className="w-8" />
                   <button
                     onClick={() => {
                       return [
@@ -418,7 +421,7 @@ function Menus() {
                 </div>
 
                 <div className="flex flex-col gap-2 items-center justify-center">
-                  <ColorIcon sx={{ color: "#f5f5f5" }} />
+                  <img src={colorIcon} className="w-8" />
                   <button
                     onClick={() => {
                       return [
