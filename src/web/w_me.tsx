@@ -101,17 +101,17 @@ function W_ME({ mode }: Props): JSX.Element {
             </div>
           </div>
 
-          <div
-            style={{ backgroundImage: `url(${bgPhobD})` }}
-            className="position bg-cover rounded-full h-96 w-96 flex items-center justify-center"
-          >
-            <div className="rotate">
-              <DarkRotate />
+          <div className="flex flex-row items-center justify-end w-screen px-10">
+            <div
+              style={{ backgroundImage: `url(${bgPhobD})` }}
+              className="position bg-cover rounded-full h-96 w-96 flex items-center justify-center"
+            >
+              <div className="rotate">
+                <DarkRotate />
+              </div>
             </div>
-          </div>
 
-          <div className="flex justify-end w-screen px-10 pt-10 ">
-            <div className="flex flex-col gap-5 items-start w-4/6 pr-32">
+            <div className="flex flex-col gap-5 items-start w-4/6 px-16">
               <div className=" grid grid-cols-2 w-full">
                 {/* left */}
                 <div className=" flex flex-col border-r-2 border-[#A1A1A1] gap-3">
@@ -347,17 +347,17 @@ function W_ME({ mode }: Props): JSX.Element {
             </div>
           </div>
 
-          <div
-            style={{ backgroundImage: `url(${bgPhob})` }}
-            className="position bg-cover rounded-full h-96 w-96 flex items-center justify-center"
-          >
-            <div className="rotate">
-              <WhiteRotate />
+          <div className="flex flex-row items-center justify-end w-screen px-10">
+            <div
+              style={{ backgroundImage: `url(${bgPhob})` }}
+              className="position bg-cover rounded-full h-96 w-96 flex items-center justify-center"
+            >
+              <div className="rotate">
+                <WhiteRotate />
+              </div>
             </div>
-          </div>
 
-          <div className="flex justify-end w-screen px-10 pt-10">
-            <div className="flex flex-col gap-5 items-start w-4/6 pr-40">
+            <div className="flex flex-col gap-5 items-start w-4/6 px-16">
               <div className=" grid grid-cols-2 w-full">
                 {/* left */}
                 <div className=" flex flex-col border-r-2 border-[#A1A1A1] gap-3">
@@ -593,17 +593,16 @@ function W_ME({ mode }: Props): JSX.Element {
             </div>
           </div>
 
-          <div
-            style={{ backgroundImage: `url(${bgPhobC})` }}
-            className="position bg-cover rounded-full h-96 w-96 flex items-center justify-center"
-          >
-            <div className="rotate">
-              <DarkRotate />
+          <div className="flex flex-row items-center justify-end w-screen px-10">
+            <div
+              style={{ backgroundImage: `url(${bgPhobC})` }}
+              className="position bg-cover rounded-full h-96 w-96 flex items-center justify-center"
+            >
+              <div className="rotate">
+                <DarkRotate />
+              </div>
             </div>
-          </div>
-
-          <div className="flex justify-end w-screen px-10 pt-10">
-            <div className="flex flex-col gap-5 items-start w-4/6 pr-40">
+            <div className="flex flex-col gap-5 items-start w-4/6 px-16">
               <div className=" grid grid-cols-2 w-full">
                 {/* left */}
                 <div className=" flex flex-col border-r-2 border-[#A1A1A1] gap-3">
