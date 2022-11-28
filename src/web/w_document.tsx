@@ -22,7 +22,7 @@ function W_Document({ mode }: Props) {
   const selectMode = (mode: string) => {
     if (mode === "darkMode") {
       return (
-        <div className="h-full w-screen px-10 bg-[#1c1c1c] flex flex-row items-center justify-center">
+        <div className="h-screen w-screen px-10 bg-[#1c1c1c] flex flex-row items-center justify-center">
           <div className="h-full w-screen p-5 grid grid-rows-2 gap-4 ">
             <div className="row-span-2 grid h-3/6 grid-cols-5 gap-4">
               <div
@@ -104,7 +104,7 @@ function W_Document({ mode }: Props) {
     }
     if (mode === "lightMode") {
       return (
-        <div className="h-full w-screen px-10 bg-[#f5f5f5] flex flex-row items-center justify-center">
+        <div className="h-screen w-screen px-10 bg-[#f5f5f5] flex flex-row items-center justify-center">
           <div className="h-full w-screen p-5 grid grid-rows-2 gap-4">
             <div className="row-span-2 grid h-3/6 grid-cols-5 gap-4">
               <div
@@ -187,7 +187,7 @@ function W_Document({ mode }: Props) {
 
     if (mode === "colorMode") {
       return (
-        <div className="h-full w-screen px-10 bg-[#E3CAC3] flex flex-row items-center justify-center">
+        <div className="h-screen w-screen px-10 bg-[#E3CAC3] flex flex-row items-center justify-center">
           <div className="h-full w-screen p-5 grid grid-rows-2 gap-4 ">
             <div className="row-span-2 grid h-3/6 grid-cols-5 gap-4 bg-[#E3CAC3]">
               <div
