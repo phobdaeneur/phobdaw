@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Phobdaw />} />
+        <Route path="/phobdaw" element={<Phobdaw />} />
       </Routes>
     </Router>
   );
