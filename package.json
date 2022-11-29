@@ -1,7 +1,7 @@
 {
   "name": "phobdaw",
   "version": "0.1.0",
-  "homepage": "https://phobdaeneur.github.io/phobdaw/",
+  "homepage": "https://phobdaeneur.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
